@@ -1,0 +1,87 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modalContent {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 24px;
+	max-width: 400px;
+	z-index: 1000;
+}
+
+.modalClose {
+	height: 35px;
+	width: 120px;
+	background-color: #3cd984;
+	border: none;
+	padding: 0px;
+	margin-top: 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 120px;
+	margin-top: 30px;
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 23px;
+	line-height: 36px;
+}
+
+.modalClose:hover {
+	background-color: #00f773;
+}
+
+.clBtnMy {
+	width: 40px;
+	height: 40px;
+	left: 160px;
+	bottom: 20px;
+	border-radius: 40px;
+	position: relative;
+	z-index: 1;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+.clBtnMy:before {
+	content: "+";
+	color: #008080;
+	position: absolute;
+	z-index: 2;
+	transform: rotate(45deg);
+	font-size: 50px;
+	line-height: 1;
+	top: -7px;
+	left: 9px;
+	transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.clBtnMy:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background: #008080;
+	z-index: 1;
+	transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+	transform: scale(0.01);
+}
+.clBtnMy:hover:after {
+	transform: scale(1);
+}
+.clBtnMy:hover:before {
+	transform: scale(0.8) rotate(45deg);
+	color: #ffffff;
+}

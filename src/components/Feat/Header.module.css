@@ -1,0 +1,124 @@
+.header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+}
+
+/* @media (max-width: 1910px) {
+	.header {
+		display: none;
+	}
+} */
+
+.containerLogo {
+	display: flex;
+}
+
+.containerLogo p {
+	font-size: 38px;
+}
+
+.nameLink {
+	text-decoration: none;
+}
+
+.nameLogo {
+	display: flex;
+	padding-top: 0px;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	color: #008080;
+	font-size: 50px;
+	text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.15);
+	border-bottom: 3px solid #008080;
+}
+
+.nameLogoDown {
+	display: flex;
+	padding-top: 0px;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	color: #008080;
+	font-size: 50px;
+	text-shadow: 5px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.links {
+	text-decoration: none;
+	color: #008080;
+	transition: 0.5s;
+	list-style-type: none;
+	padding: 10px;
+	padding-right: 35px;
+	font-size: 30px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.links:hover {
+	color: rgb(118, 118, 118);
+	
+}
+
+.ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+}
+
+/* .ul li {
+	list-style-type: none;
+	padding: 10px;
+	padding-right: 35px;
+	color: rgb(0, 0, 0);
+	font-size: 38px;
+	cursor: pointer;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+	transition: 0.25s;
+}
+
+.ul li:hover {
+	transition: 0.25s;
+	color: rgb(47, 85, 151);
+} */
+
+.svgBtn {
+
+	margin-right: 5px;
+}
+.headerBtn {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 210px;
+	height: 60px;
+	border-radius: 50px;
+	background: #008080;
+	border: none;
+	color: rgb(251, 251, 251);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.headerBtn:hover {
+	transition: 0.5s;
+	background: rgb(255, 255, 255);
+	color: #008080;
+	border: 1px solid #008080;
+}
+
+.logoSvg {
+	filter: brightness(0) saturate(100%) invert(23%) sepia(36%) saturate(2014%) hue-rotate(144deg) brightness(89%) contrast(101%);
+}
+

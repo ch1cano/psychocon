@@ -1,0 +1,128 @@
+header {
+	position: sticky;
+	z-index: 30;
+	top: 0;
+}
+
+.nav__menu-bar {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	flex-direction: column;
+	row-gap: 6px;
+	cursor: pointer;
+	padding: 25px 10px 10px 10px;
+}
+
+.small {
+	width: 25px;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 2px;
+}
+
+.big {
+	width: 40px;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 2px;
+}
+
+.nav__menu-list {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 110px;
+	width: 288px;
+	row-gap: 24px;
+	right: -288px;
+	padding: 24px 16px;
+	transition: all 0.2s;
+	min-height: calc(100vh - 60px);
+	background-color: transparent;
+	z-index: 9999;
+}
+
+.nav__menu-list.active {
+	right: 0;
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.nav__menu-bar {
+		display: none;
+	}
+	.nav__menu-list {
+		position: unset;
+		flex-direction: row;
+		min-height: fit-content;
+		width: fit-content;
+		column-gap: 24px;
+		align-items: end;
+	}
+}
+
+.nav__menu-bar.active div:nth-child(2) {
+	transform: scale(0);
+	opacity: 0;
+}
+
+.nav__menu-bar.active div:nth-child(1) {
+	animation: bar1Anim 0.3s ease-in-out forwards;
+}
+
+@keyframes bar1Anim {
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(10px) rotateZ(45deg);
+	}
+}
+
+.nav__menu-bar.active div:nth-child(3) {
+	animation: bar2Anim 0.3s ease-in-out forwards;
+}
+
+@keyframes bar2Anim {
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(-10px) rotateZ(135deg);
+	}
+}
+
+.nav__menu-bar div:nth-child(1) {
+	animation: bar1revAnim 0.3s ease-in-out;
+}
+@keyframes bar1revAnim {
+	0% {
+		transform: translateY(24px) rotateZ(45deg);
+	}
+	50% {
+		transform: translateY(24px) rotateZ(0deg);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.nav__menu-bar div:nth-child(3) {
+	animation: bar3revAnim 0.3s ease-in-out;
+}
+@keyframes bar3revAnim {
+	0% {
+		transform: translateY(-24px) rotateZ(135deg);
+	}
+	50% {
+		transform: translateY(-24px) rotateZ(0deg);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.nav__menu-bar.no-animation div {
+	animation: none;
+}

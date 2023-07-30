@@ -1,0 +1,136 @@
+.footer {
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	justify-content: space-between;
+}
+
+.logoSvg {
+	filter: brightness(0) saturate(100%) invert(23%) sepia(36%) saturate(2014%)
+		hue-rotate(144deg) brightness(89%) contrast(101%);
+}
+
+.footerName {
+	font-size: 25px;
+	color: #008080;
+}
+
+.footerLeftInfo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px 0px 0px 50px;
+}
+
+.footerRightInfo {
+	justify-content: right;
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+}
+
+
+
+.footerRightInfoT {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	padding-top: 18px;
+	padding-right: 50px;
+	position: relative;
+	/* padding-left: 40%; */
+}
+
+.footerRightInfoP {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	font-size: 10px;
+}
+
+.footerRightInfoCont {
+	display: flex;
+	justify-content: right;
+	gap: 60px;
+	padding-top: 30px;
+}
+
+.footerMail img {
+	width: 30px;
+	height: 30px;
+}
+
+.footerTelegram img {
+	/* width: 35px;
+	height: 35px; */
+	width: 30px;
+	height: 30px;
+}
+
+.footerWhats img {
+	/* width: 55px;
+	height: 55px; */
+	width: 30px;
+	height: 30px;
+}
+
+.footerRightInfoAddress {
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 600;
+	font-size: 15px;
+}
+.footerAddress{
+	margin-top: 15px;
+	display: flex;
+	gap: 10px;
+	}
+
+.footerRightInfoAddress {
+	color: #008080;
+}
+
+.footerRightInfoAddress span {
+	color: rgb(0, 0, 0);
+}
+
+@media (max-width:768px){
+	.footerRightInfoAddress{
+		font-size: 10px;
+	}
+	.logoSvg{
+		width: 50px;
+		height: 50px;
+	}
+	.footerName p{
+		font-size: 18px;
+	}
+}
+
+@media (max-width:500px){
+	.footer{
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footerLeftInfo{
+		margin-right:100px;
+		justify-content: space-around;
+	}
+	.logoSvg{
+		margin-right: 15px;
+	}
+
+	.footerRightInfoAddress{
+		margin-left: 25px;
+		font-size: 14px;
+	}
+}
