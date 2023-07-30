@@ -1,18 +1,16 @@
 import React from "react";
 import s from "./Specialists.module.css";
 import Link from "next/link";
-import { SPECIALISTS_DATA } from "@/moks/specialistsData"
+import { SPECIALISTS_DATA } from "@/moks/specialistsData";
 
 export async function getServerSideProps(context) {
 	const { params } = context;
 	const { id } = params;
 
-	const item = SPECIALISTS_DATA.filter((item) => item.id === id)
+	const item = SPECIALISTS_DATA.filter((item) => item.id === id);
 
-	return item
-
+	return item;
 }
-
 
 export const PortfolioPage = () => {
 	return (

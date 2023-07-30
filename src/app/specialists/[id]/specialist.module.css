@@ -1,9 +1,10 @@
 .wrapper {
-	min-height: 1360px;
 	width: 100%;
 	background: rgba(209, 223, 205, 0.498);
 	display: flex;
 	flex-direction: column;
+	height: 100%;
+	min-height: 1300px;
 }
 
 .portfolioCards {
@@ -157,6 +158,17 @@
 	max-width: 780px;
 	width: 780px;
 	padding: 10px;
+}
+
+.sert {
+	font-size: 28px;
+	text-align: start;
+	padding: 25px 10px 0px 20px;
+}
+
+.sertInfo {
+	font-size: 20px;
+	padding: 20px;
 }
 
 .educationheader {
