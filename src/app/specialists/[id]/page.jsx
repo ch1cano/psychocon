@@ -3,10 +3,16 @@
 import React, { useState } from "react";
 import s from "./specialist.module.css";
 import Link from "next/link";
-import { specialistsData } from "@/lib/specialistsData";
+import { SPECIALISTS_DATA } from "@/moks/specialistsData"
 
+
+export const getServerSideProps = (pageId) => SPECIALISTS_DATA.find(({ id }) => id === pageId)
 
 const SpecialistPage = ({ params }) => {
+
+    const pageData = getServerSideProps(params.id)
+    console.log(pageData)
+
     console.log(params, "params")
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -37,7 +43,6 @@ const SpecialistPage = ({ params }) => {
         setIsOpen3((prevState) => !prevState);
     };
 
-    console.log(specialistsData, "work fn")
 
     return (
         <div className={s.wrapper}>
@@ -49,7 +54,7 @@ const SpecialistPage = ({ params }) => {
                     </div>
                     <div className={s.rightItem}>
                         <div className={s.nameInfo}>
-                            <p className={s.nameFirst}></p>
+                            <p className={s.nameFirst}>{pageData.firstname}</p>
                             <p className={s.nameLast}></p>
                         </div>
                         <br />
