@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import s from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,36 +8,63 @@ import Modal from "../Modal/Modal";
 import Form from "../Form/Form";
 import NavItem from "./Navbar/navbarItem";
 
+const links = [
+	{ text: "Главная", href: "/" },
+	{ text: "Специалисты", href: "/specialists" },
+	{ text: "О нас", href: "/about" },
+];
+
 const Header = () => {
 	const { isOpen, openModal, closeModal } = useModal();
+	const [navActive, setNavActive] = useState(null);
+	const [activeIdx, setActiveIdx] = useState(-1);
+
+	useEffect(() => {
+		const menu = document.querySelector(".nav__menu-bar");
+		if (menu) {
+			menu.addEventListener("click", () => {
+				menu.classList.toggle("active");
+				menu.classList.remove("no-animation");
+			});
+		}
+	}, []);
 
 	return (
 		<header className={s.header}>
 			<div className={s.containerLogo}>
 				<Image
-					className={s.logoSvg}
+					className={s.logo}
 					alt="#"
 					src="/image/mainLogoD.svg"
 					width={100}
-					height={100}
+					height={80}
 				/>
 				<Link className={s.nameLink} href="/">
 					<p className={s.nameLogo}>Психокон</p>
 					<p className={s.nameLogoDown}>Psyhocon</p>
 				</Link>
 			</div>
-			<nav>
-				<ul className={s.ul}>
-					<Link className={s.links} href="/">
-						<li className={s.li}>Главная</li>
-					</Link>
-					<Link className={s.links} href="/specialists">
-						<li className={s.li}>Специалисты</li>
-					</Link>
-					<Link className={s.links} href="/about">
-						<li className={s.li}>О нас</li>
-					</Link>
-				</ul>
+			<nav className={`nav`}>
+				<div
+					onClick={() => setNavActive(!navActive)}
+					className={`nav__menu-bar`}>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div className={`${navActive ? "active" : ""} nav__menu-list`}>
+					{links.map((menu, idx) => (
+						<div
+							className={s.links}
+							onClick={() => {
+								setActiveIdx(idx);
+								setNavActive(false);
+							}}
+							key={menu.text}>
+							<NavItem active={activeIdx === idx} {...menu} />
+						</div>
+					))}
+				</div>
 			</nav>
 			<button onClick={openModal} className={s.headerBtn}>
 				<svg

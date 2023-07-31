@@ -62,7 +62,6 @@
 
 .links:hover {
 	color: rgb(118, 118, 118);
-	
 }
 
 .ul {
@@ -90,7 +89,6 @@
 } */
 
 .svgBtn {
-
 	margin-right: 5px;
 }
 .headerBtn {
@@ -118,7 +116,14 @@
 	border: 1px solid #008080;
 }
 
-.logoSvg {
-	filter: brightness(0) saturate(100%) invert(23%) sepia(36%) saturate(2014%) hue-rotate(144deg) brightness(89%) contrast(101%);
+@media (max-width: 769px) {
+	.headerBtn,
+	.nameLink {
+		display: none;
+	}
 }
 
+.logo {
+	filter: brightness(0) saturate(100%) invert(23%) sepia(36%) saturate(2014%)
+		hue-rotate(144deg) brightness(89%) contrast(101%);
+}
