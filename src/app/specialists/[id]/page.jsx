@@ -14,6 +14,7 @@ export const getServerSideProps = (pageId) =>
 const SpecialistPage = ({ params }) => {
 	const { isOpen, openModal, closeModal } = useModal();
 
+
 	const pageData = getServerSideProps(params.id);
 	const [isFlipped, setIsFlipped] = useState(false);
 	const handleClick = () => {
@@ -67,8 +68,6 @@ const SpecialistPage = ({ params }) => {
 						</div>
 					</div>
 				</div>
-				{/* )
-				)} */}
 			</div>
 			<div className={s.otherInfo}>
 				<div className={s.esse}>

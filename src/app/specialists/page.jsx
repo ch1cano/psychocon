@@ -1,7 +1,11 @@
+"use client"
 import React from "react";
 import s from "./Specialists.module.css";
 import Link from "next/link";
 import { SPECIALISTS_DATA } from "@/moks/specialistsData";
+import Modal from "@/components/Modal/Modal";
+import Form from "@/components/Form/Form";
+import useModal from "@/hooks/UseModal";
 
 export async function getServerSideProps(context) {
 	const { params } = context;
@@ -13,6 +17,9 @@ export async function getServerSideProps(context) {
 }
 
 export const PortfolioPage = () => {
+
+	const { isOpen, openModal, closeModal } = useModal();
+
 	return (
 		<div className={s.wrapper}>
 			<div className={s.header}>
@@ -41,10 +48,13 @@ export const PortfolioPage = () => {
 						<Link href={`specialists/${id}`}>
 							<button className={s.btnPortfolio}>Портфолио</button>
 						</Link>
-						<button className={s.btnPortfolioBy}>Записаться</button>
+						<button onClick={openModal} className={s.btnPortfolioBy}>Записаться</button>
 					</div>
 				))}
 			</div>
+			<Modal isOpen={isOpen} onClose={closeModal}>
+				<Form />
+			</Modal>
 		</div>
 	);
 };
