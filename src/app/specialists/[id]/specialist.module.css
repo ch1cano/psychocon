@@ -142,9 +142,15 @@
 	padding: 25px 10px 0px 20px;
 }
 
+.div:last-child {
+	padding-bottom: 30px;
+}
+
 .essep {
 	font-size: 20px;
-	padding: 20px;
+	padding: 5px;
+	text-indent: 1em;
+	padding-left: 1em;
 }
 
 .education {
@@ -168,7 +174,7 @@
 
 .sertInfo {
 	font-size: 20px;
-	padding: 20px;
+	padding: 5px 20px;
 }
 
 .educationheader {
@@ -179,7 +185,9 @@
 
 .educationp {
 	font-size: 20px;
-	padding: 20px;
+	padding: 5px 20px;
+	text-indent: 1em;
+	padding-left: 1em;
 }
 
 .sertficate {
@@ -202,7 +210,7 @@
 
 .sertficatep {
 	font-size: 20px;
-	padding: 20px;
+	padding: 5px 20px;
 }
 
 .btnUp {
@@ -241,4 +249,37 @@
 
 .flipComponent.flipped {
 	transform: rotate(180deg);
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
 }

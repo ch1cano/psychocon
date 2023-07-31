@@ -33,7 +33,7 @@ const Navbar = () => {
 					<div className="small"></div>
 				</div>
 				<div className={`${navActive ? "active" : ""} nav__menu-list`}>
-					{/* {links.map((menu, idx) => (
+					{links.map((menu, idx) => (
 						<div
 							onClick={() => {
 								setActiveIdx(idx);
@@ -42,7 +42,7 @@ const Navbar = () => {
 							key={menu.text}>
 							<NavItem active={activeIdx === idx} {...menu} />
 						</div>
-					))} */}
+					))}
 				</div>
 			</nav>
 		</header>
