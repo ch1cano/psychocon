@@ -6,6 +6,7 @@
 	position: relative;
 	justify-content: space-between;
 	background-color: white;
+	align-items: center;
 }
 
 .logoSvg {
@@ -22,7 +23,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 0px 0px 0px 50px;
+	padding: 10px 0px 0px 20px;
 }
 
 .footerRightInfo {
@@ -102,27 +103,23 @@
 
 @media (max-width: 768px) {
 	.footerRightInfoAddress {
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.logoSvg {
 		width: 50px;
 		height: 50px;
 	}
 	.footerName p {
-		font-size: 18px;
+		font-size: 14px;
+	}
+	.footerLeftInfo {
+		padding: 10px 0px 0px 20px;
 	}
 }
 
 @media (max-width: 500px) {
-	.footer {
-		margin: 0 auto;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.footerLeftInfo {
-		margin-right: 100px;
-		justify-content: space-around;
+	.footerName {
+		display: none;
 	}
 	.logoSvg {
 		margin-right: 15px;
@@ -130,6 +127,28 @@
 
 	.footerRightInfoAddress {
 		margin-left: 25px;
-		font-size: 14px;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 486px) {
+	.footer {
+		position: absolute;
+		bottom: 0;
+	}
+	.logoSvg {
+		margin-right: 15px;
+	}
+
+	.footerRightInfoAddress {
+		margin-left: 25px;
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 380px) {
+	.footer {
+		position: relative;
+		bottom: 0;
 	}
 }
