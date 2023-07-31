@@ -41,14 +41,15 @@ nav {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 85px;
+	top: 110px;
 	width: 288px;
 	row-gap: 24px;
 	right: -288px;
-	padding: 0px 16px;
+	padding: 24px 16px;
 	transition: all 0.2s;
 	min-height: calc(100vh - 60px);
-	background-color: white;
+	background-color: transparent;
+	z-index: 9999;
 }
 .nav__menu-list.active {
 	right: 0;
