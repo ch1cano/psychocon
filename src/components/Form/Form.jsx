@@ -79,11 +79,9 @@ const Form = () => {
             <option value='' hidden>
               -- Выберите специалиста --
             </option>
-            <option>Петя</option>
-            <option>Вася</option>
-            <option>Степа</option>
-            <option>Толя</option>
-            <option>Коля</option>
+            <option>Никитина Ольга Владимировна</option>
+            <option>Петрова Светлана Анатольевна</option>
+            <option>Попова Юлия Констанитиновна</option>
           </select>
           <br />
           {errors.specialist && <span className={s.errorsSpan}>{errors.specialist.message}</span>}

@@ -16,15 +16,15 @@ const Footer = () => {
           />
         </div>
         <div className={s.footerName}>
-          <p>Психокон/Psychocon</p>
+          <p>Психокон/Psyhocon</p>
         </div>
       </div>
       <div className={s.footerRightInfo}>
         <div className={s.footerRightInfoAddress}>
           <div className={s.footerAddress}>
             <div>
-              <p>Адрес в Краснодаре:</p> 
-			  <p>телефон для связи:</p>
+              <p>Адрес в Краснодаре:</p>
+              <p>телефон для связи:</p>
             </div>
             <div>
               <p>ул. Горького 64 </p>
