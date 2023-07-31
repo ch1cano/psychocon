@@ -16,6 +16,7 @@
 	padding: 20px;
 	border-radius: 24px;
 	max-width: 400px;
+	width: 100%;
 	z-index: 1000;
 }
 
@@ -62,7 +63,7 @@
 	font-size: 50px;
 	line-height: 1;
 	top: -7px;
-	left: 9px;
+	left: 10px;
 	transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
 }
 .clBtnMy:after {

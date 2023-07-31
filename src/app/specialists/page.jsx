@@ -45,10 +45,12 @@ export const PortfolioPage = () => {
 								height={345}
 							/>
 						</div>
-						<Link href={`specialists/${id}`}>
-							<button className={s.btnPortfolio}>Портфолио</button>
-						</Link>
-						<button onClick={openModal} className={s.btnPortfolioBy}>Записаться</button>
+						<div className={s.btnsPortfolio}>
+							<Link href={`specialists/${id}`}>
+								<button className={s.btnPortfolio}>Портфолио</button>
+							</Link>
+							<button onClick={openModal} className={s.btnPortfolioBy}>Записаться</button>
+						</div>
 					</div>
 				))}
 			</div>
