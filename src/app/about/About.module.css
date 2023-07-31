@@ -11,7 +11,7 @@
 }
 
 .headerText {
-	color:  #008080;
+	color: #008080;
 	font-size: 50px;
 	font-weight: 500;
 }
@@ -21,19 +21,36 @@
 	text-align: center;
 	padding-top: 50px;
 	font-size: 35px;
-	color:  #008080;
+	color: #008080;
+}
 
+.aboutMe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 55%;
+}
+
+.aboutMeInfo {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .paragraph {
 	letter-spacing: 2px;
-	padding: 30px 50px 0px 50px;
+	padding: 30px 0px 0px 0px;
 	font-size: 22px;
 	text-align: justify;
+	justify-content: center;
 }
 
 .paragraph strong {
-	color:  #008080;
+	color: #008080;
 }
 
 .aboutNetworksInfo {
@@ -41,13 +58,12 @@
 	text-align: center;
 	padding-top: 200px;
 	font-size: 35px;
-	color:  #008080;
+	color: #008080;
 }
 
 .emailP {
 	color: #808080;
 }
-
 
 .aboutNetworksInfo p {
 	font-size: 24px;
@@ -56,18 +72,15 @@
 .aboutGmail {
 	margin-top: 40px;
 	line-height: 25px;
-	
 }
 
 .vk {
 	margin-left: 25px;
 }
 
-
 .mailIcn {
 	font-size: 24px;
 }
-
 
 .aboutNetworksInfoCont {
 	display: flex;
@@ -85,15 +98,14 @@
 	cursor: pointer;
 }
 
-
 .mailIcn {
-	color:  #008080;
+	color: #008080;
 	text-decoration: none;
 	transition: 0.3s;
 }
 
 .mailIcn:hover {
-	color:  #008080;
+	color: #008080;
 	text-decoration: none;
 }
 
@@ -136,6 +148,7 @@
 	}
 	.paragraph {
 		font-size: 12px;
+		letter-spacing: 1px;
 	}
 	.aboutNetworksInfo {
 		font-size: 20px;
@@ -151,7 +164,8 @@
 	}
 	.paragraph {
 		width: 100%;
-		font-size: 12px;
+		font-size: 11px;
+		letter-spacing: 0;
 	}
 	.aboutNetworksInfo {
 		font-size: 20px;
@@ -165,5 +179,4 @@
 	.aboutNetworksInfoCont p {
 		font-size: 20px;
 	}
-
 }

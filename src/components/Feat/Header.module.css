@@ -15,6 +15,9 @@
 
 .containerLogo {
 	display: flex;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
 }
 
 .containerLogo p {
