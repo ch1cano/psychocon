@@ -6,8 +6,9 @@ import Head from "next/head";
 
 import { BsTelegram } from "react-icons/bs"
 import { BiLogoWhatsappSquare } from "react-icons/bi"
-import { Icon56LogoVk } from '@vkontakte/icons';
 import { MdAlternateEmail } from "react-icons/md"
+import vkLogo from "../../assets/icons8-vk.svg"
+import Image from "next/image";
 
 const AboutPage = () => {
 
@@ -76,19 +77,19 @@ const AboutPage = () => {
 				<div className={s.aboutNetworksInfoCont}>
 					<div className={s.aboutMail_vk}>
 						<a className={s.mailIcn} href="https://vk.com/psihokon" target="blank">
-							<Icon56LogoVk className={s.vk} />
+							<Image src={vkLogo} width={60} alt="vk" className={s.Icn} />
 							<p>ВКонтакте</p>
 						</a>
 					</div>
 					<div className={s.aboutMail}>
 						<a className={s.mailIcn} href="https://t.me/Psychoc0n" target="blank">
-							<BsTelegram size={50} />
+							<BsTelegram size={50} className={s.Icn} />
 							<p>Telegram</p>
 						</a>
 					</div>
 					<div className={s.aboutMail}>
 						<a className={s.mailIcn} href="https://wa.me/79604766926" target="blank">
-							<BiLogoWhatsappSquare size={60} />
+							<BiLogoWhatsappSquare size={60} className={s.Icn} />
 							<p>WhatsApp</p>
 						</a>
 					</div>

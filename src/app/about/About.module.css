@@ -1,5 +1,4 @@
 .wrapper {
-	min-height: 1200px;
 	width: 100%;
 	padding-top: 40px;
 	background: rgba(209, 223, 205, 0.498);
@@ -28,8 +27,9 @@
 
 .paragraph {
 	letter-spacing: 2px;
-	padding: 30px 200px 0px 200px;
+	padding: 30px 50px 0px 50px;
 	font-size: 22px;
+	text-align: justify;
 }
 
 .paragraph strong {
@@ -125,4 +125,45 @@
 	.aboutNetworksInfo {
 		font-size: 25px;
 	}
+}
+
+@media (max-width: 1024px) {
+	.headerText {
+		font-size: 32px;
+	}
+	.aboutHeader {
+		font-size: 20px;
+	}
+	.paragraph {
+		font-size: 12px;
+	}
+	.aboutNetworksInfo {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.headerText {
+		font-size: 24px;
+	}
+	.aboutHeader {
+		font-size: 20px;
+	}
+	.paragraph {
+		width: 100%;
+		font-size: 12px;
+	}
+	.aboutNetworksInfo {
+		font-size: 20px;
+	}
+	.Icn {
+		width: 40px;
+	}
+	.aboutNetworksInfo {
+		font-size: 20px;
+	}
+	.aboutNetworksInfoCont p {
+		font-size: 20px;
+	}
+
 }
