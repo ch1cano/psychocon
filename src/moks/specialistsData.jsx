@@ -61,7 +61,7 @@ export const SPECIALISTS_DATA = [
 	},
 	{
 		id: "3",
-		img: "/image/portf-3.jpg",
+		img: "/image/portf-4.jpg",
 		firstname: "Попова",
 		lastname: "Юлия Констанитиновна",
 		fastinfo: "Психолог в сфере эмоционально-образной терапии",

@@ -30,7 +30,7 @@
 	align-items: center;
 	flex-direction: column;
 	margin: 0 auto;
-	width: 55%;
+	width: 58%;
 }
 
 .aboutMeInfo {
@@ -164,7 +164,7 @@
 	}
 	.paragraph {
 		width: 100%;
-		font-size: 11px;
+		font-size: 15px;
 		letter-spacing: 0;
 	}
 	.aboutNetworksInfo {

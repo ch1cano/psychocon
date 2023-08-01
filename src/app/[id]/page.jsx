@@ -43,7 +43,7 @@ const SpecialistPage = ({ params }) => {
 				<div className={s.portfolioCard}>
 					<div className={s.leftItem}>
 						<div className={s.imageBlock}>
-							<Image src={pageData.img} alt='pageData' width={180} height={260} />
+							<Image src={pageData.img} alt='pageData' style={{ borderRadius: 5 }} width={240} height={360} />
 						</div>
 					</div>
 					<div className={s.rightItem}>

@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </div>
         <div className={s.footerName}>
-          <p>Психокон/Psychocon</p>
+          <p>Психокон<span>/</span> </p><p className={s.footerNameEng}>Psychocon</p>
         </div>
       </div>
       <div className={s.footerRightInfo}>
