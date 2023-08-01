@@ -6,15 +6,9 @@ import { SPECIALISTS_DATA } from "@/moks/specialistsData";
 import Modal from "@/components/Modal/Modal";
 import Form from "@/components/Form/Form";
 import useModal from "@/hooks/UseModal";
+import { getServerSideProps } from "@/moks/specialistsData";
 
-export async function getServerSideProps(context) {
-	const { params } = context;
-	const { id } = params;
-
-	const item = SPECIALISTS_DATA.filter((item) => item.id === id);
-
-	return item;
-}
+getServerSideProps()
 
 export const PortfolioPage = () => {
 
