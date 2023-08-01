@@ -8,7 +8,6 @@ import Form from "@/components/Form/Form";
 import { getServerSideProps } from "@/moks/specialistsData";
 
 
-
 const SpecialistPage = ({ params }) => {
 	const { isOpen, openModal, closeModal } = useModal();
 
@@ -44,7 +43,7 @@ const SpecialistPage = ({ params }) => {
 				<div className={s.portfolioCard}>
 					<div className={s.leftItem}>
 						<div className={s.imageBlock}>
-							<Image src={pageData.img} alt="pageData" width={180} height={260} />
+							<Image src={pageData.img} alt='pageData' width={180} height={260} />
 						</div>
 					</div>
 					<div className={s.rightItem}>
@@ -76,7 +75,7 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick}>
 							<button className={s.btnUp} onClick={toggleDropdown}>
 								<img
-									className={`${s.flipComponent} ${isFlipped ? s.flipped : ""}`}
+									className={`${s.flipComponent} ${isFlipped ? s.flipped : ''}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
 									width={26}
@@ -101,7 +100,7 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick2}>
 							<button onClick={toggleDropdown2} className={s.btnUp}>
 								<img
-									className={`${s.flipComponent} ${isFlipped2 ? s.flipped : ""
+									className={`${s.flipComponent} ${isFlipped2 ? s.flipped : ''
 										}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
@@ -130,7 +129,7 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick3}>
 							<button onClick={toggleDropdown3} className={s.btnUp}>
 								<img
-									className={`${s.flipComponent} ${isFlipped3 ? s.flipped : ""
+									className={`${s.flipComponent} ${isFlipped3 ? s.flipped : ''
 										}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
