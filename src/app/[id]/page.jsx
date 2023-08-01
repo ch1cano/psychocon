@@ -2,14 +2,12 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import s from "./specialist.module.css";
-
-import { SPECIALISTS_DATA } from "@/moks/specialistsData";
 import useModal from "@/hooks/UseModal";
 import Modal from "@/components/Modal/Modal";
 import Form from "@/components/Form/Form";
+import { getServerSideProps } from "@/moks/specialistsData";
 
-export const getServerSideProps = (pageId) =>
-	SPECIALISTS_DATA.find(({ id }) => id === pageId);
+
 
 const SpecialistPage = ({ params }) => {
 	const { isOpen, openModal, closeModal } = useModal();
