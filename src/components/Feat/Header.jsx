@@ -41,7 +41,7 @@ const Header = () => {
 				/>
 				<Link className={s.nameLink} href="/">
 					<p className={s.nameLogo}>Психокон</p>
-					<p className={s.nameLogoDown}>Psyhocon</p>
+					<p className={s.nameLogoDown}>Psychocon</p>
 				</Link>
 			</div>
 			<nav className={`nav`}>
