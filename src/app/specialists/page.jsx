@@ -46,7 +46,7 @@ export const PortfolioPage = () => {
 							/>
 						</div>
 						<div className={s.btnsPortfolio}>
-							<Link href={`specialists/${id}`}>
+							<Link href={`${id}`}>
 								<button className={s.btnPortfolio}>Портфолио</button>
 							</Link>
 							<button onClick={openModal} className={s.btnPortfolioBy}>Записаться</button>
