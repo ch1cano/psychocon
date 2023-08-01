@@ -1,3 +1,6 @@
+export const getServerSideProps = (pageId) =>
+	SPECIALISTS_DATA.find(({ id }) => id === pageId);
+
 export const SPECIALISTS_DATA = [
 	{
 		id: "1",
