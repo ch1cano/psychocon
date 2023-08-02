@@ -30,7 +30,7 @@
 	align-items: center;
 	flex-direction: column;
 	margin: 0 auto;
-	width: 58%;
+	width: 60%;
 }
 
 .aboutMeInfo {
@@ -42,11 +42,12 @@
 }
 
 .paragraph {
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	padding: 30px 0px 0px 0px;
 	font-size: 22px;
 	text-align: justify;
 	justify-content: center;
+	white-space:normal;
 }
 
 .paragraph strong {
@@ -179,4 +180,16 @@
 	.aboutNetworksInfoCont p {
 		font-size: 20px;
 	}
+}
+
+@media (max-width: 468px) {
+	.aboutMe {
+		width: 80%;
+	}
+	.paragraph {
+		width: 100%;
+		font-size: 15px;
+		white-space:normal;
+	}
+	
 }
