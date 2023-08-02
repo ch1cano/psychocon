@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-	font-family: 'Edu SA Beginner', cursive;
+	font-family: "Roboto Mono", monospace;
 }
 
 header {
@@ -46,7 +45,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 110px;
+	top: 100px;
 	width: 288px;
 	row-gap: 24px;
 	right: -288px;

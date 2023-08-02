@@ -11,7 +11,7 @@ header {
 	flex-direction: column;
 	row-gap: 6px;
 	cursor: pointer;
-	padding: 25px 10px 10px 10px;
+	padding: 0px 30px 10px 10px;
 }
 
 .small {
@@ -32,11 +32,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 110px;
-	width: 288px;
+
+	width: 100%;
 	row-gap: 24px;
 	right: -288px;
-	padding: 24px 16px;
+	padding: 164px 16px 0px 0px;
 	transition: all 0.2s;
 	min-height: calc(100vh - 60px);
 	background-color: transparent;
