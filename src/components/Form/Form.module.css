@@ -12,9 +12,9 @@
 }
 @media (max-width: 768px) {
 	.formContiner {
-		width: 350px;
+		width: 300px;
 		height: 600px;
-		padding: 0px 5px;
+		margin-left: 4%;
 	}
 	p.buner {
 		font-size: 25px;
@@ -61,7 +61,7 @@
 	font-size: 35px;
 	font-weight: 800;
 	color: #008080;
-	padding-right: 30px;
+	/* padding-right: 30px; */
 }
 
 .bunerDesc {
@@ -123,7 +123,7 @@
 	color: #ffffff;
 	cursor: pointer;
 	transition: 0.5s;
-	margin-left: 65px;
+	margin-left: 22.5%;
 }
 
 .formBtn:hover {
@@ -145,8 +145,8 @@
 	max-width: 500px;
 	text-align: center;
 	border-radius: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
+	/* padding-left: 15px;
+	padding-right: 15px; */
 }
 
 @media (max-width: 768px) {
