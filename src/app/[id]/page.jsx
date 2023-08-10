@@ -7,10 +7,8 @@ import Modal from "@/components/Modal/Modal";
 import Form from "@/components/Form/Form";
 import { getServerSideProps } from "@/moks/specialistsData";
 
-
 const SpecialistPage = ({ params }) => {
 	const { isOpen, openModal, closeModal } = useModal();
-
 
 	const pageData = getServerSideProps(params.id);
 	const [isFlipped, setIsFlipped] = useState(false);
@@ -43,7 +41,13 @@ const SpecialistPage = ({ params }) => {
 				<div className={s.portfolioCard}>
 					<div className={s.leftItem}>
 						<div className={s.imageBlock}>
-							<Image src={pageData.img} alt='pageData' style={{ borderRadius: 5 }} width={240} height={360} />
+							<Image
+								src={pageData.img}
+								alt="pageData"
+								style={{ borderRadius: 5 }}
+								width={240}
+								height={360}
+							/>
 						</div>
 					</div>
 					<div className={s.rightItem}>
@@ -75,7 +79,7 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick}>
 							<button className={s.btnUp} onClick={toggleDropdown}>
 								<img
-									className={`${s.flipComponent} ${isFlipped ? s.flipped : ''}`}
+									className={`${s.flipComponent} ${isFlipped ? s.flipped : ""}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
 									width={26}
@@ -89,6 +93,10 @@ const SpecialistPage = ({ params }) => {
 							<p className={s.essep}>{pageData.esse2}</p>
 							<p className={s.essep}>{pageData.esse3}</p>
 							<p className={s.essep}>{pageData.esse4}</p>
+							<p className={s.essep}>{pageData.esse5}</p>
+							<p className={s.essep}>{pageData.esse6}</p>
+							<p className={s.essep}>{pageData.esse7}</p>
+							<p className={s.essep}>{pageData.esse8}</p>
 						</div>
 					)}
 				</div>
@@ -100,8 +108,9 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick2}>
 							<button onClick={toggleDropdown2} className={s.btnUp}>
 								<img
-									className={`${s.flipComponent} ${isFlipped2 ? s.flipped : ''
-										}`}
+									className={`${s.flipComponent} ${
+										isFlipped2 ? s.flipped : ""
+									}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
 									width={26}
@@ -112,12 +121,10 @@ const SpecialistPage = ({ params }) => {
 					{isOpen2 && (
 						<div className={s.div}>
 							<p className={s.educationp}>{pageData.education}</p>
-							<p className={s.sert}>
-								<span className={s.cheroz}>Сертификаты</span>
-							</p>
-							<p className={s.sertInfo}> {pageData.sertificfation}</p>
-							<p className={s.sertInfo}> {pageData.sertificfation2}</p>
-							<p className={s.sertInfo}> {pageData.sertificfation3}</p>
+							<p className={s.educationp}>{pageData.education2}</p>
+							<p className={s.educationp}>{pageData.education3}</p>
+							<p className={s.educationp}>{pageData.education4}</p>
+							<p className={s.educationp}>{pageData.education5}</p>
 						</div>
 					)}
 				</div>
@@ -129,8 +136,9 @@ const SpecialistPage = ({ params }) => {
 						<div className={s.btnDiv} onClick={handleClick3}>
 							<button onClick={toggleDropdown3} className={s.btnUp}>
 								<img
-									className={`${s.flipComponent} ${isFlipped3 ? s.flipped : ''
-										}`}
+									className={`${s.flipComponent} ${
+										isFlipped3 ? s.flipped : ""
+									}`}
 									src="../svg/arrow.svg"
 									alt="arrow"
 									width={26}
