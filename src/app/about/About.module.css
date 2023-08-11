@@ -24,6 +24,12 @@
 	color: #008080;
 }
 
+.aboutmis {
+	font-size: 24px;
+	color: #008080;
+	font-weight: 600;
+}
+
 .aboutMe {
 	display: flex;
 	justify-content: center;
@@ -47,7 +53,7 @@
 	font-size: 22px;
 	text-align: justify;
 	justify-content: center;
-	white-space:normal;
+	white-space: normal;
 }
 
 .paragraph strong {
@@ -123,6 +129,9 @@
 	.aboutNetworksInfo {
 		font-size: 30px;
 	}
+	.aboutmis {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -137,6 +146,9 @@
 	}
 	.aboutNetworksInfo {
 		font-size: 25px;
+	}
+	.aboutmis {
+		font-size: 18px;
 	}
 }
 
@@ -153,6 +165,9 @@
 	}
 	.aboutNetworksInfo {
 		font-size: 20px;
+	}
+	.aboutmis {
+		font-size: 14px;
 	}
 }
 
@@ -180,6 +195,9 @@
 	.aboutNetworksInfoCont p {
 		font-size: 20px;
 	}
+	.aboutmis {
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 468px) {
@@ -189,7 +207,9 @@
 	.paragraph {
 		width: 100%;
 		font-size: 15px;
-		white-space:normal;
+		white-space: normal;
 	}
-	
+	.aboutmis {
+		font-size: 17px;
+	}
 }
